@@ -4,8 +4,12 @@ version = 3
 
 [[package]]
 name = "airline"
-version = "0.1.0"
-source = "git+ssh://git@github.com/jacksonzamorano/airline.git#1c3d3050d0418a12ce1b8444e67fc1d504350a97"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "955133fae16dd5d71b83530a59eb238414d6643ab8e8ab9cd5a58b1eed36d507"
+dependencies = [
+ "airline-macros",
+]
 
 [[package]]
 name = "airline-demo"
@@ -13,3 +17,9 @@ version = "0.1.0"
 dependencies = [
  "airline",
 ]
+
+[[package]]
+name = "airline-macros"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c6e77e5a468c59a0271fa229a335b67472622ac1439f0facd612f07a623dba53"
