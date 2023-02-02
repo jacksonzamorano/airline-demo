@@ -14,7 +14,7 @@ fn setup() -> ServerEnvironment {
 }
 
 fn index(_req: &Request, res: &mut Response, _data: &ServerEnvironment) {
-    res.send_string(Assets::index());
+    res.send_bytes(Assets::index());
 }
 
 fn main() {
